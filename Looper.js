@@ -20,22 +20,22 @@
 	// node
 	if (typeof module !== 'undefined' && module.exports && typeof window === 'undefined') {
 		module.exports = Looper;
-	} 
+	}
 
 	// amd
 	else if (typeof define !== 'undefined' && define.amd) {
-     
-      define(function(){
-      	return Looper;
-      });
 
-    } 
+		define(function() {
+			return Looper;
+		});
 
-    // browser
-    else {
-      
-      root.looper = Looper;
-      root.Looper = Looper;
+	}
+
+	// browser
+	else {
+
+		root.looper = Looper;
+		root.Looper = Looper;
 
 	}
 
